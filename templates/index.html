@@ -1,0 +1,42 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+{% include "head.html" %}
+{% include "header.html" %}
+<body>
+
+  <!-- Start your project here-->
+  <main>
+  
+<div class="container" id="about">
+<hr class="between-sections">
+  {% include "mywork.html" %}
+<hr class="between-sections">
+ {% include "video.html" %}
+<hr class="between-sections">
+  {% include "about.html" %}
+<hr class="between-sections">
+ {% include "contact.html" %}
+<hr class="between-sections">
+  {% include "map.html" %}
+</div>
+
+
+  </main>
+{% include "footer.html" %}
+
+  <div class="dotted-scrollspy clearfix d-none d-sm-block">
+    <ul class="nav smooth-scroll flex-column">
+      <li class="nav-item"><a class="nav-link" href="#mywork"><span></span></a></li>
+      <li class="nav-item"><a class="nav-link" href="#about"><span></span></a></li>
+       <li class="nav-item"><a class="nav-link" href="#contact"><span></span></a></li>
+      <li class="nav-item"><a class="nav-link" href="#map"><span></span></a></li>
+    </ul>
+  </div>
+
+  {% include "scripts.html" %}
+</body>
+
+</html>
